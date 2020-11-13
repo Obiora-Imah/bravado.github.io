@@ -47,8 +47,11 @@ RSpec.describe Offer, type: :model do
       end
 
       it "should return a perfect match and good match" do
-        binding.pry
         expect(Offer.match_offers([user.id, user_1.id], [department_1.id, department_2.id], "Quicko", "asc")).to eq([offer_1, offer_2])
+      end
+
+      it "should return a perfect match and good match in correct order" do
+        expect(Offer.match_offers([user.id, user_1.id], [department_1.id, department_2.id], "Quicko", "asc")).not_to eq([offer_2, offer_1])
       end
     end
   end
