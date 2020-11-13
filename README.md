@@ -13,3 +13,10 @@ _Setup Instruction_
 ```
 
 Offer url: http://localhost:7000/offers?[parameters]
+
+** Test **
+
+```
+  bundle exec rspec spec/models/offer_spec.rb
+
+```
