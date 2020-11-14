@@ -20,7 +20,7 @@ class OffersController < ApplicationController
     current_page = params[:page] || 1
     stop = page_size * current_page
     start = stop - page_size
-    return all_offers(start, stop) if !params[:user_id]
+    return all_offers(start, stop) unless params[:user_id].present?
     get_offers[start...stop]
   end
 
