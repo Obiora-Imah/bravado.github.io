@@ -7,6 +7,7 @@ _Setup Instruction_
   git clone git@github.com:Obiora-Imah/bravado.github.io.git
   git fetch origin working
   git checkout working
+  cd bavado_test
   rake db:migrate
   rake db:seed
   rails server
