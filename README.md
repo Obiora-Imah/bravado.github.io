@@ -16,7 +16,7 @@ _Setup Instruction_
 
 - search for offer(postamn client):
 
-* Offer url: http://localhost:7000/offers?[parameters]
+* Offer url: http://localhost:port/offers?[parameters]
 
 ** Test **
 
