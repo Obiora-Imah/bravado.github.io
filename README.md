@@ -8,12 +8,15 @@ _Setup Instruction_
   git fetch origin working
   git checkout working
   cd bavado_test
+  bundle install
   rake db:migrate
   rake db:seed
   rails server
 ```
 
-Offer url: http://localhost:7000/offers?[parameters]
+- search for offer(postamn client):
+
+* Offer url: http://localhost:7000/offers?[parameters]
 
 ** Test **
 
